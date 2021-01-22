@@ -1,0 +1,38 @@
+<br/><br/>
+<div class="col-md-6 col-md-offset-2">
+  <h2>Add User</h2>
+  <br/>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="studentId">Student ID</label>
+      <input formControlName="studentId" placeholder="First Name" name="studentId" class="form-control" id="studentId">
+      <div *ngIf="submitted && addForm.controls.studentId.errors" class="error">
+          <div class="text-danger" *ngIf="addForm.controls.studentId.errors.required">Student ID is Required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="studentName">Student Name:</label>
+      <input formControlName="studentName" placeholder="Student name" name="studentName" class="form-control" id="studentName">
+      <div *ngIf="submitted && addForm.controls.studentName.errors" class="error">
+          <div class="text-danger" *ngIf="addForm.controls.studentName.errors.required">Student Name is Required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="score">Student Score:</label>
+      <input type="score" formControlName="score" placeholder="Student Score" name="score" class="form-control" id="score">
+      <div *ngIf="submitted && addForm.controls.score.errors" class="error">
+          <div class="text-danger" *ngIf="addForm.controls.score.errors.required"> Student Score is Required</div>
+        </div>
+    </div>
+    
+    <button class="btn btn-success">Save</button>&nbsp; &nbsp;
+    <button class="btn btn-danger" type="reset">Cancel</button>
+&nbsp; &nbsp;
+    <a class="btn btn-warning" href="/list-user">Back to List</a> 
+
+    <br/><br/>
+  </form>
+</div>

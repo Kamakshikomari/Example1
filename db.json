@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "studentId": "100",
+      "studentName": "kamakshi",
+      "score": "79"
+    },
+    {
+      "id": 2,
+      "studentId": "102",
+      "studentName": "Prasanna",
+      "score": "100"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+1. Install Json Server (will be acting as Rest Services)
+-- npm install -g json-server
+
+2. Run json server using following command
+-- json-server --watch db.json
+
+3. Test your db.json file
+http://localhost:3000/users
